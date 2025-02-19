@@ -1,0 +1,404 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+   
+}
+
+
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.sec-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(asset/Homepage_Starlink_SLC_40_Desktop_5b1e6b5dd0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: transparent;
+}
+
+.logo img {
+    height: 40px;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    
+    width: 300px;
+    height: 100%;
+    background: black;
+    color: white;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+
+.sidebar.active {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    justify-content: left;
+}
+
+.sidebar ul li a:hover {
+    color: #aaa;
+}
+
+.sidebar .main-hide {
+    display: none;
+   
+}
+ .container{
+   
+    width: 70%;
+    height: 266px;
+    position: relative;
+    top: 48vh;
+    left: 60px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.container h4{
+    font-size: 30px;
+    font-weight: normal;
+}
+.container h2{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.container a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    border: 3px solid #fff;
+    padding: 12px 64px;
+    position: relative;
+    transition: color 400ms;
+}
+.container a::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    display: inline-block;
+    background-color: #fff;
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: -1;
+    transition: transform 400ms;
+}
+.container a:hover{
+    color: #000;
+    z-index: 8;
+}
+.container a:hover::after{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    
+}
+.arrow-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+.arrow-container i {
+    font-size: 40px; 
+    align-items: center;
+
+   
+    color: white; 
+    animation: bounce-fade 2s infinite ease-in-out;
+}
+
+@keyframes bounce-fade {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px);
+       
+    }
+}
+
+.sec-2{
+    background-image: url(asset/Starlink_12_3_Desktop_2a135d6ae5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec-3{
+    background-image: url(asset/Flight_7_Website_Desktop_7_4afb3a9d9a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec-4{
+    background-image: url(asset/make_life_multiplanetary_desktop_3fa7cff73c.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.sec-5{
+    background-image: url(asset/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.sec-6{
+    background-image: url(asset/Maxar_3_titusville_DSC_9200_desktop_31a60c6f5e.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.sec-7{
+    background-image: url(asset/Star12_8_021525_DSC_4855_desktop2_646111ec0f.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.footer{
+    background-color: #000;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.footer h3{
+    color: #fff;
+}
+.copy{
+    font-weight: normal;
+}
+.footer-pointer{
+    cursor: pointer;
+}
+.footer-pointer:hover{
+    color: #333333da;
+}
+
+@media(max-width:770px){
+   html,body{
+    overflow-x: hidden;
+   }
+    .navbar{
+        padding: 20px 10px;
+    }
+    .sec-1 {
+        width: 100%;
+        height: 100vh;
+    }
+    .logo img{
+        width: 100%;
+        height: 40px;
+        position: relative;
+        left: 280px;
+    }
+    .nav-links li {
+      display: none;
+    }
+   
+    .sidebar .main-hide{
+        display: block;
+    }
+    
+    .hamburger span{
+        width: 20px;
+        height: 2px;
+        margin: 2px;
+    }
+    .sidebar{
+        width: 200px;
+    }
+    .sidebar ul li{
+        padding: 10px 15px;
+    }
+    .sidebar ul li a {
+        font-size: 10px;
+    }
+     .container{
+        position: relative;
+        left: 40px;
+        height: 150px;
+    }
+    .container h4{
+        font-size: 20px;
+    }
+    .container h2{
+        font-size: 35px;
+    }
+    .container a{
+        font-size: 18px;
+        padding: 6px 32px;
+    }
+    .arrow-container i{
+        font-size: 30px;
+    }
+}
+@media (max-width:480px){
+    .logo img{
+        width: 100%;
+        height: 30px;
+        position: relative;
+        left: 150px;
+    }
+    .sidebar ul{
+        text-align: right;
+    }
+    .container h4{
+        font-size: 17px;
+    }
+    .container h2{
+        font-size: 28px;
+    }
+    .container a{
+        font-size: 14px;
+        padding: 5px 25px;
+    }
+    .sec-1{
+        background-image: url(asset/Homepage_Starlink_SLC_40_Mobile_208feb364b.jpg);
+    }
+    .sec-2{
+        background-image: url(asset/Starlink_12_3_Mobile_1bd2d019a0.jpg);
+    }
+    .sec-3{
+        background-image: url(asset/Flight_7_Website_Mobile_5_9a9288c933.jpg);
+    }
+    .sec-4{
+        background-image: url(asset/make_life_multiplanetary_mobile_270364788f.jpg);
+    }
+    .sec-5{
+        background-image: url(asset/Evasuit_mobile_Vers3_ae50e33c99.jpg);
+    }
+    .sec-6{
+        background-image: url(asset/Maxar_3_titusville_DSC_9200_mobile_1ec9685344.jpg);
+    }
+    .sec-7{
+        background-image: url(asset/Star12_8_021525_DSC_4855_mobile_78eeb69b9e.jpg);
+    }
+    .arrow-container i{
+        font-size: 20px;
+    }
+    .footer{
+        gap: 20px;
+    }
+    .footer .copy{
+       
+       font-size: 13px;
+    }
+    .footer .footer-pointer{
+      
+        font-size: 13px;
+    }
+}
+@media (max-width:350px){
+    .logo img{
+        position: relative;
+        left: 90px;
+    }
+}
