@@ -5,17 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rajdhani', sans-serif;
-   
+    font-family: 'Rajdhani', sans-serif;  
 }
-
-
-
 section {
     width: 100%;
     height: 100vh;
 }
-
 .sec-1 {
     width: 100%;
     height: 100vh;
@@ -24,8 +19,6 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -281,6 +274,173 @@ section {
 .footer-pointer:hover{
     color: #333333da;
 }
+
+body.rewatch .navbar{
+    background-color: #000;
+}
+.back-to-home{
+    background-color: #000;
+    text-transform: uppercase;
+    height: 70px;
+    word-spacing: 3px;
+}
+.back-to-home a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 35px;
+    left: 40px;
+}
+.rewatch-sec{
+    background-image: url(asset/rewatch-img.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rewatch-sec{
+    display: flex   ;
+    justify-content: center;
+    align-items: center;
+}
+.rewatch-sec a {
+    text-decoration: none;
+    color: #fff;
+}
+.rewatch-sec a i{
+    font-size: 80px;
+}
+.rewatch-content-1{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    height: 40vh;
+   
+}
+.rewatch-content-1 h3{
+    width: 70%;
+    color: #6b6a6a;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    
+}
+.rewatch-content-1 h1{
+    width: 70%;
+   
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.rewatch-conten-2{
+    background-color: #000;
+    height: 20vh;
+    color: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.rewatch-conten-2 div p{
+    font-size: 20px;
+    /* border: 1px solid red; */
+    margin: 0px 20px;
+    padding: 15px 8px;
+}
+body.watch .watch-sec-1{
+    background-image: url(asset/watch-Launch_Page_Starlink1_vertical_18_DESKTOP_c851b30656.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.launch-details {
+    height: 70vh;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+}
+.launch-details p {
+    width: 60%;
+    font-size: 20px;
+   margin: auto;
+   padding-top: 50px;
+   /* padding: 50px ; */
+}
+
+.highlight {
+   font-weight: bold;
+}
+
+.watch-countdown-1 {
+   background-color: #000;
+   height: 150vh;
+}
+
+.watch-countdown-1 h1 {
+    font-size: 58px;
+    color: #fff;
+    font-weight: bold;
+   margin-left: 60px;
+   /* border: 1px solid red; */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 90%;
+    margin-left: 60px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    color: #fff;
+     border-bottom: 2px solid rgb(68, 68, 68);
+     border-width:90% ;
+    padding: 30px;
+}
+.how-it-launch{
+   background-color: #000;
+}
+.how-it-launch img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.launch-landing-deployment {
+    background-color: #000;
+    height: 200vh;
+    margin-top: 190px;
+}
+
+.launch-landing-deployment h1 {
+    font-size: 58px;
+    font-weight: bold;
+    margin-left: 60px;
+    color: #fff;
+  margin-bottom: 20px;
+}
+
+.launch-landing-deployment p {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+body.falcon-9 .falcon-9-sec-1{
+    background-image: url(asset/falcon-9_f9_feature.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 @media(max-width:770px){
    html,body{
